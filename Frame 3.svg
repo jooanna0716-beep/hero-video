@@ -1,5 +1,44 @@
 <svg width="2742" height="1283" viewBox="0 0 2742 1283" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="2742" height="1283" fill="white"/>
+<style>
+.hero-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.bg-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.stream-layer {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+}
+
+.stream-group path {
+    fill: none;
+    stroke: url(#stream-grad); /* 위에서 만든 그라데이션 적용 */
+    stroke-width: 3;
+    stroke-linecap: round;
+    
+    /* 영상처럼 긴 빛의 줄기를 만듦 */
+    stroke-dasharray: 150, 450; 
+    filter: drop-shadow(0 0 6px #A020F0);
+    
+    /* 속도를 4초 정도로 맞춤 (영상 속도와 유사) */
+    animation: stream-flow 4s linear infinite;
+}
+
+@keyframes stream-flow {
+    from { stroke-dashoffset: 600; }
+    to { stroke-dashoffset: 0; }
+}
+</style>
 <path d="M1601.07 691.903C1605.83 689.87 1622.18 681.675 1633.9 674.127C1642.45 668.615 1653.07 665.245 1661.27 658.724C1672 650.2 1681.12 646.062 1691.06 642.283C1700.09 638.846 1707.82 633.739 1717.75 629.96C1728.2 625.984 1738.63 619.362 1747.2 615.922C1757.14 612.502 1765.33 605.684 1771.17 597.458C1772.21 595.394 1772.89 593.361 1773.59 591.266" stroke="#CAC8EA" stroke-width="3" stroke-linecap="round"/>
 <path d="M1755.1 539.922C1759.19 543.331 1766.03 550.15 1777.31 561.107C1783.12 563.87 1796.08 564.568 1811.48 566.94C1816.72 569.312 1816.72 574.057 1816.72 578.945" stroke="#CAC8EA" stroke-width="3" stroke-linecap="round"/>
 <path d="M1607.23 505.008C1605.87 505.008 1603.14 506.363 1599.72 509.434C1592.66 515.777 1592.85 546.536 1599.32 566.243C1603.15 577.915 1617.46 577.549 1629.09 580.989C1639.48 584.061 1651.67 589.872 1660.6 591.946C1670.51 594.251 1681.12 596.732 1726.51 596.075C1743.5 595.829 1748.92 584.429 1753.02 583.741C1761.8 582.268 1770.79 595.335 1781.76 602.195C1793.39 609.468 1802.3 613.163 1810.53 615.566C1814.62 615.915 1818.75 617.27 1822.85 619.663C1824.91 620.7 1826.95 621.378 1829.04 622.076" stroke="#CAC8EA" stroke-width="3" stroke-linecap="round"/>
